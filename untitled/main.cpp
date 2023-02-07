@@ -2,11 +2,6 @@
 
 using namespace std;
 
-
-
-
-
-
 int main()
 {
    cout << "What's your favorite word??? " << endl;

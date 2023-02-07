@@ -1,9 +1,14 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
-    return 0;
+ cout << setw(5) <<
+
+         for(){
+           for(){
+}
+}
 }
