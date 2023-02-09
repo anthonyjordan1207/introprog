@@ -5,10 +5,22 @@ using namespace std;
 
 int main()
 {
- cout << setw(5) <<
+   int c;
+   int r;
+   cout << "How many columns would you like?" << endl;
 
-         for(){
-           for(){
-}
-}
+   cin >> c;
+
+   cout << "Now, how many rows would you like?";
+
+   cin >> r;
+
+   for (int n = 1; n < c; n++){
+    cout << setw(5) << n;
+
+    for (int a = 1; a < r; a++){
+    cout << setw(5) << a*n;
+   }
+    cout << endl;
+   }
 }
