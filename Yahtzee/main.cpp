@@ -173,9 +173,14 @@ int calcfullhouse (vector<int> dice) {
 }
 int calcsmallstraight (vector<int> dice) {
     sort (dice.begin(),dice.end());
-    int z = 0;
+   if (dice[0] == 1 && dice [4] == 6 && dice[3] == 5 && dice [2] == 3){
+       return 0;
+   }
+
+   else{
+       int z = 0;
     for (int i = 0; i < dice.size(); i++){
-        if (dice[i] == dice[i+1] - 1){
+        if (dice[i] == dice[i+1]-1){
             z++;
 
         }
@@ -186,7 +191,10 @@ int calcsmallstraight (vector<int> dice) {
     else {
         return 0;
     }
-}
+   }
+   }
+
+
 
 int calclargestraight (vector<int> dice) {
     sort (dice.begin(),dice.end());
@@ -232,7 +240,7 @@ int calcchance(vector<int> dice)
 
 int main()
 {
-    vector <int> dice{4,4,2,4,3};
+    vector <int> dice{1,3,2,6,5};
 
 
     cout << "Aces " << calcaces(dice) << endl;
